@@ -1,0 +1,16 @@
+
+#noteList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #noteList li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .multiline {
+    white-space: pre-wrap;
+  }

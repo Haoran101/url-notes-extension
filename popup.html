@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>URL Pattern Notes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="w3-khaki">
+    <div class="w3-margin">
+        <div id="viewNote" style="display: none;">
+            <h3 id="noteTitle"></h3>
+            <p id="savedNote" style="font-size: smaller; padding-bottom: 25%;" class="multiline"></p>
+            <div class="bottom">
+                <button class="w3-btn w3-ripple w3-teal" id="edit">Edit</button>
+                <a href="notes.html" target="_blank">All Notes</a>
+            </div>
+        </div>
+        <div id="editNote" style="display: none;">
+
+            <input class="w3-input w3-sand w3-margin-top" type="text" id="title" placeholder="Title">
+            <textarea class="w3-khaki w3-section" style="font-size: small;" id="note" rows="4" cols="50"
+                placeholder="Note Here..."></textarea>
+            <div style="font-size: small; padding-bottom: 25%;">
+                <label for="regex">URL</label>
+                <textarea class="w3-sand" style="font-size: smaller;" wrap="soft" rows="3" cols="50" type="text" id="regex" placeholder="e.g., ^/path/to/page"></textarea>
+            </div>
+            <div class="bottom">
+                <button class="w3-btn w3-teal" id="save">Save</button>
+                <a href="notes.html" target="_blank">All Notes</a>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
